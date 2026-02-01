@@ -1,0 +1,342 @@
+[
+  {
+    "turns": [
+      {
+        "speaker": "Ada Chen Rekhi",
+        "timestamp": "00:00:00",
+        "timestampSeconds": 0,
+        "text": "It's a terrible outcome to wake up one day and be late career and feel trapped because you have a certain lifestyle or a certain expectations of the people around you that you have to go work this job, but then you look at yourself in the mirror and you're not happy going in there. I think that's a terrible trap that we should all try to avoid as we navigate our career paths and find the thing that's most optimal for us. Which is usually a mix of career success, but also meaningfulness and alignment in the work that we're doing with our values."
+      },
+      {
+        "speaker": "Lenny",
+        "timestamp": "00:00:36",
+        "timestampSeconds": 36,
+        "text": "Welcome to Lenny's Podcast, where I interview world-class product leaders and growth experts to learn from their hard [inaudible 00:00:42] experiences building and growing today's most successful products. Today my guest is Ada Chen Rekhi. Ada is an executive coach and also the co-founder of a product called Notejoy. In her coaching practice, she focuses on helping founders scale themselves. Before starting her company, she was senior vice president of marketing at SurveyMonkey. Before that, she started a contact management startup that was acquired by LinkedIn where she ended up leading LinkedIn's marketing efforts for their growth team. Two fun facts about Ada. One, she started her current company with her husband, which we chat about whether that's a good idea or not. Also, her brother is Andrew Chen of a16z fame. In our conversation, it explains how to make better decisions with a framework she calls Curiosity Loops."
+      },
+      {
+        "speaker": "Lenny",
+        "timestamp": "00:01:21",
+        "timestampSeconds": 81,
+        "text": "We do a live exercise around my own personal values. She shares a bunch of advice on how to intentionally and practically build your early career path. How to thrive as a woman in Silicon Valley, when to get a coach and what you can do on your own without one and a ton more. Enjoy this episode with Ada Chen Rekhi after a short word from our sponsors."
+      },
+      {
+        "speaker": "Lenny",
+        "timestamp": "00:01:40",
+        "timestampSeconds": 100,
+        "text": "This episode is brought to you by Sprig. Next generation product teams like, Robinhood, Notion and Loom rely on Sprig to uncover blind spots in their product development process. Sprig let's product teams collect user insights fast, allowing you to better understand why users take certain actions and how they feel about the experience. One of the things I love most about Sprig is that they're all about getting product teams the specific insights they need in the timeframe that they need it."
+      }
+    ],
+    "speaker": "Lenny",
+    "startTimestamp": "00:00:00",
+    "startTimestampSeconds": 0,
+    "text": "Ada Chen Rekhi: It's a terrible outcome to wake up one day and be late career and feel trapped because you have a certain lifestyle or a certain expectations of the people around you that you have to go work this job, but then you look at yourself in the mirror and you're not happy going in there. I think that's a terrible trap that we should all try to avoid as we navigate our career paths and find the thing that's most optimal for us. Which is usually a mix of career success, but also meaningfulness and alignment in the work that we're doing with our values.\n\nLenny: Welcome to Lenny's Podcast, where I interview world-class product leaders and growth experts to learn from their hard [inaudible 00:00:42] experiences building and growing today's most successful products. Today my guest is Ada Chen Rekhi. Ada is an executive coach and also the co-founder of a product called Notejoy. In her coaching practice, she focuses on helping founders scale themselves. Before starting her company, she was senior vice president of marketing at SurveyMonkey. Before that, she started a contact management startup that was acquired by LinkedIn where she ended up leading LinkedIn's marketing efforts for their growth team. Two fun facts about Ada. One, she started her current company with her husband, which we chat about whether that's a good idea or not. Also, her brother is Andrew Chen of a16z fame. In our conversation, it explains how to make better decisions with a framework she calls Curiosity Loops.\n\nLenny: We do a live exercise around my own personal values. She shares a bunch of advice on how to intentionally and practically build your early career path. How to thrive as a woman in Silicon Valley, when to get a coach and what you can do on your own without one and a ton more. Enjoy this episode with Ada Chen Rekhi after a short word from our sponsors.\n\nLenny: This episode is brought to you by Sprig. Next generation product teams like, Robinhood, Notion and Loom rely on Sprig to uncover blind spots in their product development process. Sprig let's product teams collect user insights fast, allowing you to better understand why users take certain actions and how they feel about the experience. One of the things I love most about Sprig is that they're all about getting product teams the specific insights they need in the timeframe that they need it.",
+    "guestSlug": "ada-chen-rekhi",
+    "episodeTitle": "Feeling stuck? Here's how to know when it's time to leave your job | Ada Chen Rekhi"
+  },
+  {
+    "turns": [
+      {
+        "speaker": "Lenny",
+        "timestamp": "00:02:07",
+        "timestampSeconds": 127,
+        "text": "As of today's, Sprig is making that even easier with the new and improved templates library. On this podcast, you've heard a lot about how useful templates are for companies as they grow. Sprig partnered with some of the top product teams and product thinkers to build proven playbooks, specifically to solve the biggest challenges facing product teams today from how to optimize an existing feature to improving a conversion flow to troubleshooting drop off. Sprig helps you build better products. Sprig now has a library of more than 85 templates that you can use to get started collecting user insights quickly right in your app. I especially love that Sprig builds templates specifically for product teams, and I was really excited when they ask me to create a template around product sense."
+      },
+      {
+        "speaker": "Lenny",
+        "timestamp": "00:02:47",
+        "timestampSeconds": 167,
+        "text": "One of the questions they get most is how to develop your product sense. So I decided to build a playbook along with Sprig on how to do that based on my experience at Airbnb and from what I've learned interviewing top product folks like, Jules Walter who wrote a whole guest post on how to build your product sense. Explore my product sense playbook and the entire Sprig templates library and build better products faster. Check it out today at sprig.com/templates. That's S-P-R-I-G.com/templates. Ada, welcome to the podcast."
+      },
+      {
+        "speaker": "Ada Chen Rekhi",
+        "timestamp": "00:03:20",
+        "timestampSeconds": 200,
+        "text": "Thanks. I'm excited to be here."
+      },
+      {
+        "speaker": "Lenny",
+        "timestamp": "00:03:22",
+        "timestampSeconds": 202,
+        "text": "So I've heard such great things about you from a lot of people, including a bunch of guests that have been on the podcast. And you also have this really great event diagram of maybe an ideal guest for the podcast. You've done growth. You've done products. You've started a company. You're also an executive coach to founders. So there's a variety of topics I'm excited to begin too. So thanks again for being here."
+      }
+    ],
+    "speaker": "Lenny",
+    "startTimestamp": "00:02:07",
+    "startTimestampSeconds": 127,
+    "text": "Lenny: As of today's, Sprig is making that even easier with the new and improved templates library. On this podcast, you've heard a lot about how useful templates are for companies as they grow. Sprig partnered with some of the top product teams and product thinkers to build proven playbooks, specifically to solve the biggest challenges facing product teams today from how to optimize an existing feature to improving a conversion flow to troubleshooting drop off. Sprig helps you build better products. Sprig now has a library of more than 85 templates that you can use to get started collecting user insights quickly right in your app. I especially love that Sprig builds templates specifically for product teams, and I was really excited when they ask me to create a template around product sense.\n\nLenny: One of the questions they get most is how to develop your product sense. So I decided to build a playbook along with Sprig on how to do that based on my experience at Airbnb and from what I've learned interviewing top product folks like, Jules Walter who wrote a whole guest post on how to build your product sense. Explore my product sense playbook and the entire Sprig templates library and build better products faster. Check it out today at sprig.com/templates. That's S-P-R-I-G.com/templates. Ada, welcome to the podcast.\n\nAda Chen Rekhi: Thanks. I'm excited to be here.\n\nLenny: So I've heard such great things about you from a lot of people, including a bunch of guests that have been on the podcast. And you also have this really great event diagram of maybe an ideal guest for the podcast. You've done growth. You've done products. You've started a company. You're also an executive coach to founders. So there's a variety of topics I'm excited to begin too. So thanks again for being here.",
+    "guestSlug": "ada-chen-rekhi",
+    "episodeTitle": "Feeling stuck? Here's how to know when it's time to leave your job | Ada Chen Rekhi"
+  },
+  {
+    "turns": [
+      {
+        "speaker": "Ada Chen Rekhi",
+        "timestamp": "00:03:22",
+        "timestampSeconds": 202,
+        "text": "Yeah, I'm excited to be here."
+      },
+      {
+        "speaker": "Lenny",
+        "timestamp": "00:03:45",
+        "timestampSeconds": 225,
+        "text": "An interesting thing that I'll start with is that when we were chatting about what to focus on in our conversation, where you're emailing about this, and you did something that I thought was really interesting. You ran something called a Curiosity Loop where you pinged a bunch of your friends and asked them for input in this really structured way. So I thought I'd start there. Could you just share what this process is, so that we can learn how to maybe do it ourselves, this idea of a curiosity loop?"
+      },
+      {
+        "speaker": "Ada Chen Rekhi",
+        "timestamp": "00:04:08",
+        "timestampSeconds": 248,
+        "text": "A curiosity loop is essentially going to a whole bunch of people. In this case, I sent out an email very quickly to about 10 or 11 people and asking them, \"Hey, here are nine topics for Lenny's Podcast. What are two or three of the topics that resonate with you and why?\" And I got back such an incredible amount of information for about 20 minutes of work. I don't normally do this, but I actually showed you some of the anonymized feedback from people really just talking about what resonated and what didn't. So I came out of it just so much smarter, and curiosity loops are my method of doing so."
+      },
+      {
+        "speaker": "Lenny",
+        "timestamp": "00:04:42",
+        "timestampSeconds": 282,
+        "text": "Often, people ask friends for advice on just like, \"Hey, what should I do here? What can I maybe talk about on this podcast?\" Your approach had a lot of structure to it. So maybe two questions just like, what is the actual structure to this concept? And then two, just people... You can often ask friends for advice, but you also don't want to over bug them with questions. How do you think about just not over asking everyone questions all the time, but all decisions you want to make? So I guess the question is, when do you use this versus just not?"
+      }
+    ],
+    "speaker": "Ada Chen Rekhi",
+    "startTimestamp": "00:03:22",
+    "startTimestampSeconds": 202,
+    "text": "Ada Chen Rekhi: Yeah, I'm excited to be here.\n\nLenny: An interesting thing that I'll start with is that when we were chatting about what to focus on in our conversation, where you're emailing about this, and you did something that I thought was really interesting. You ran something called a Curiosity Loop where you pinged a bunch of your friends and asked them for input in this really structured way. So I thought I'd start there. Could you just share what this process is, so that we can learn how to maybe do it ourselves, this idea of a curiosity loop?\n\nAda Chen Rekhi: A curiosity loop is essentially going to a whole bunch of people. In this case, I sent out an email very quickly to about 10 or 11 people and asking them, \"Hey, here are nine topics for Lenny's Podcast. What are two or three of the topics that resonate with you and why?\" And I got back such an incredible amount of information for about 20 minutes of work. I don't normally do this, but I actually showed you some of the anonymized feedback from people really just talking about what resonated and what didn't. So I came out of it just so much smarter, and curiosity loops are my method of doing so.\n\nLenny: Often, people ask friends for advice on just like, \"Hey, what should I do here? What can I maybe talk about on this podcast?\" Your approach had a lot of structure to it. So maybe two questions just like, what is the actual structure to this concept? And then two, just people... You can often ask friends for advice, but you also don't want to over bug them with questions. How do you think about just not over asking everyone questions all the time, but all decisions you want to make? So I guess the question is, when do you use this versus just not?",
+    "guestSlug": "ada-chen-rekhi",
+    "episodeTitle": "Feeling stuck? Here's how to know when it's time to leave your job | Ada Chen Rekhi"
+  },
+  {
+    "turns": [
+      {
+        "speaker": "Ada Chen Rekhi",
+        "timestamp": "00:05:12",
+        "timestampSeconds": 312,
+        "text": "I think that there are heavyweight and lightweight ways to use this. So the heavyweight way was what I just exemplified by saying, I sent an email and I made a doc. And on the other side, I had all of this really interesting and rich data. The lightweight way to do this is really just make it your ongoing theme of what you're curious about as you interact with people. So maybe it's this thing where every single day as you talk to people, if you have a social topic, you might just bring up the same question over and over again and start looking for are there any differences or surprises in what people are telling you? One of the big reasons why I think curiosity loops are really useful is that it really fights the fact that there's a lot of bad advice out there."
+      },
+      {
+        "speaker": "Ada Chen Rekhi",
+        "timestamp": "00:05:54",
+        "timestampSeconds": 354,
+        "text": "And it's not bad because it's not well-intentioned, but it's bad because it's not contextual. So when someone tells you to quit your job and chase your dreams, or they tell you to sit tight and grind through and build some experience before you go off and go start the company that you've always been thinking about starting, which piece of advice do you actually take? Right? A lot of it depends on your situation, what you're considering, what skills and experience you actually have, and curiosity loops actually are this way of really thinking about how do you make your advice contextual. So I'll break it down a bit in terms of how I think about structuring it. So the first piece of a curiosity loop is really just thinking about asking a good question. In the time when I was working at SurveyMonkey in the past, I had this opportunity to spend a lot of time with the survey researchers, and we really talked a lot about what makes a question good."
+      },
+      {
+        "speaker": "Ada Chen Rekhi",
+        "timestamp": "00:06:44",
+        "timestampSeconds": 404,
+        "text": "So in this case, a question's good if it's specific, if it solicits rationale, and it's not biased. You don't want to start a question with, here's what I think because people have this tendency to want to please you or to agree with you. So a good example... Well, let me start with a bad example of a question. A bad example of a question is, what should I do with my career next? It's just such a poorly formed question because it's really vague, it's not specific. It puts a lot of cognitive load on other people, and the output that you're going to get from it is probably going to be similarly bad. Garbage in, garbage out. A better example of a question might be something like, \"Hey, you know me. I'm a marketer. I've been thinking about doing this webdev thing. So my plan is to quit my job, do a webdev bootcamp and then go find a job elsewhere. Do you think that's a good idea?\""
+      },
+      {
+        "speaker": "Ada Chen Rekhi",
+        "timestamp": "00:07:45",
+        "timestampSeconds": 465,
+        "text": "There's just so much rich data to actually explore with that. First, are you suited to being a developer? Are webdev boot camps effective? What's the state of the economy in the hiring market right now for junior web developers? And that's an example of maybe a question that's a little bit more specific and gives people something to anchor on. So that's the first piece. The next piece is really around how do you curate who you ask? I think there are two dimensions of this. The first one is the obvious one, which is a subject matter expert who really knows something about the topic at hand. So maybe a webdev themselves, for my example question. Another one, and this dimension I think is really important, is someone who knows you really well and can provide insight on how well does that work for you. And then after that, you really want to ask the question. And this touches on what you said about how do you make it really lightweight?"
+      }
+    ],
+    "speaker": "Ada Chen Rekhi",
+    "startTimestamp": "00:05:12",
+    "startTimestampSeconds": 312,
+    "text": "Ada Chen Rekhi: I think that there are heavyweight and lightweight ways to use this. So the heavyweight way was what I just exemplified by saying, I sent an email and I made a doc. And on the other side, I had all of this really interesting and rich data. The lightweight way to do this is really just make it your ongoing theme of what you're curious about as you interact with people. So maybe it's this thing where every single day as you talk to people, if you have a social topic, you might just bring up the same question over and over again and start looking for are there any differences or surprises in what people are telling you? One of the big reasons why I think curiosity loops are really useful is that it really fights the fact that there's a lot of bad advice out there.\n\nAda Chen Rekhi: And it's not bad because it's not well-intentioned, but it's bad because it's not contextual. So when someone tells you to quit your job and chase your dreams, or they tell you to sit tight and grind through and build some experience before you go off and go start the company that you've always been thinking about starting, which piece of advice do you actually take? Right? A lot of it depends on your situation, what you're considering, what skills and experience you actually have, and curiosity loops actually are this way of really thinking about how do you make your advice contextual. So I'll break it down a bit in terms of how I think about structuring it. So the first piece of a curiosity loop is really just thinking about asking a good question. In the time when I was working at SurveyMonkey in the past, I had this opportunity to spend a lot of time with the survey researchers, and we really talked a lot about what makes a question good.\n\nAda Chen Rekhi: So in this case, a question's good if it's specific, if it solicits rationale, and it's not biased. You don't want to start a question with, here's what I think because people have this tendency to want to please you or to agree with you. So a good example... Well, let me start with a bad example of a question. A bad example of a question is, what should I do with my career next? It's just such a poorly formed question because it's really vague, it's not specific. It puts a lot of cognitive load on other people, and the output that you're going to get from it is probably going to be similarly bad. Garbage in, garbage out. A better example of a question might be something like, \"Hey, you know me. I'm a marketer. I've been thinking about doing this webdev thing. So my plan is to quit my job, do a webdev bootcamp and then go find a job elsewhere. Do you think that's a good idea?\"\n\nAda Chen Rekhi: There's just so much rich data to actually explore with that. First, are you suited to being a developer? Are webdev boot camps effective? What's the state of the economy in the hiring market right now for junior web developers? And that's an example of maybe a question that's a little bit more specific and gives people something to anchor on. So that's the first piece. The next piece is really around how do you curate who you ask? I think there are two dimensions of this. The first one is the obvious one, which is a subject matter expert who really knows something about the topic at hand. So maybe a webdev themselves, for my example question. Another one, and this dimension I think is really important, is someone who knows you really well and can provide insight on how well does that work for you. And then after that, you really want to ask the question. And this touches on what you said about how do you make it really lightweight?",
+    "guestSlug": "ada-chen-rekhi",
+    "episodeTitle": "Feeling stuck? Here's how to know when it's time to leave your job | Ada Chen Rekhi"
+  },
+  {
+    "turns": [
+      {
+        "speaker": "Ada Chen Rekhi",
+        "timestamp": "00:08:41",
+        "timestampSeconds": 521,
+        "text": "Ask the question in a way that really gets you a useful constructive answer, but doesn't put too much weight on people. So what I usually like to do is just make it very lightweight. So in your case, I said, \"Here are nine topics. Can you pick your top two and tell me why you like them?\" Some people went above and beyond and scrolled through and gave me feedback on every single topic. Some of them just said, \"Here are my top two, and here's one I think you should avoid.\" I wanted to design it in a way where if you're a busy founder, you're a busy product person, which is the list that I chose for this curiosity loop, you would be able to sit down on your couch at the end of the night, read this interesting email and tap out a quick reply and give me that answer. Because the risk that you're running is either you're getting poor answers or you're getting a really low response rate because you've given them way too much cognitive load in terms of answering it."
+      },
+      {
+        "speaker": "Ada Chen Rekhi",
+        "timestamp": "00:09:35",
+        "timestampSeconds": 575,
+        "text": "And then finally, to close the loop, I think a big piece of it is processing that information and then thanking them for it. So a big misconception that people have when they're really getting into this work of asking for advice or input from other people in the community is often that it's really one-sided. I'm asking you for help and you're getting nothing out of it. The reminder that I would have for all of you is that it feels really good to help someone. It feels really good to be heard and give input. And a big piece of that is, if someone comes to you and they said, \"You gave me this advice, it changed my life. Maybe it's not at that level, but it really affected my decision and here's how it turned out. Thank you so much.\" That feels so good, especially if you only spent a few minutes giving them the input that enabled them to make a better decision."
+      },
+      {
+        "speaker": "Lenny",
+        "timestamp": "00:10:21",
+        "timestampSeconds": 621,
+        "text": "So to summarize, I wrote these pieces down. The concept broadly is if you want advice on a decision you're trying to make, pick some friends and this is... I guess I'll go through the four things you just mentioned. And part two is actually pick the right friends. But one is just, come up with a question that's specific. As in just like, what should I do with my life? But more, should I take the specific role at the specific company? Figure out the people that know you well and maybe have some context on this decision. How many people do you usually email for this sort of thing? What's a number?"
+      },
+      {
+        "speaker": "Ada Chen Rekhi",
+        "timestamp": "00:10:55",
+        "timestampSeconds": 655,
+        "text": "I would try to optimize for getting at least three or four responses. It just depends on the nature of the loop. And then you think about what is your response rate. So if you're emailing really busy people that you don't know very well, maybe you would assume that you only get half of people to respond. If you're emailing people really well and it's really lightweight like, yes or no, and here's why, then you might just send out a handful."
+      }
+    ],
+    "speaker": "Ada Chen Rekhi",
+    "startTimestamp": "00:08:41",
+    "startTimestampSeconds": 521,
+    "text": "Ada Chen Rekhi: Ask the question in a way that really gets you a useful constructive answer, but doesn't put too much weight on people. So what I usually like to do is just make it very lightweight. So in your case, I said, \"Here are nine topics. Can you pick your top two and tell me why you like them?\" Some people went above and beyond and scrolled through and gave me feedback on every single topic. Some of them just said, \"Here are my top two, and here's one I think you should avoid.\" I wanted to design it in a way where if you're a busy founder, you're a busy product person, which is the list that I chose for this curiosity loop, you would be able to sit down on your couch at the end of the night, read this interesting email and tap out a quick reply and give me that answer. Because the risk that you're running is either you're getting poor answers or you're getting a really low response rate because you've given them way too much cognitive load in terms of answering it.\n\nAda Chen Rekhi: And then finally, to close the loop, I think a big piece of it is processing that information and then thanking them for it. So a big misconception that people have when they're really getting into this work of asking for advice or input from other people in the community is often that it's really one-sided. I'm asking you for help and you're getting nothing out of it. The reminder that I would have for all of you is that it feels really good to help someone. It feels really good to be heard and give input. And a big piece of that is, if someone comes to you and they said, \"You gave me this advice, it changed my life. Maybe it's not at that level, but it really affected my decision and here's how it turned out. Thank you so much.\" That feels so good, especially if you only spent a few minutes giving them the input that enabled them to make a better decision.\n\nLenny: So to summarize, I wrote these pieces down. The concept broadly is if you want advice on a decision you're trying to make, pick some friends and this is... I guess I'll go through the four things you just mentioned. And part two is actually pick the right friends. But one is just, come up with a question that's specific. As in just like, what should I do with my life? But more, should I take the specific role at the specific company? Figure out the people that know you well and maybe have some context on this decision. How many people do you usually email for this sort of thing? What's a number?\n\nAda Chen Rekhi: I would try to optimize for getting at least three or four responses. It just depends on the nature of the loop. And then you think about what is your response rate. So if you're emailing really busy people that you don't know very well, maybe you would assume that you only get half of people to respond. If you're emailing people really well and it's really lightweight like, yes or no, and here's why, then you might just send out a handful.",
+    "guestSlug": "ada-chen-rekhi",
+    "episodeTitle": "Feeling stuck? Here's how to know when it's time to leave your job | Ada Chen Rekhi"
+  },
+  {
+    "turns": [
+      {
+        "speaker": "Lenny",
+        "timestamp": "00:11:22",
+        "timestampSeconds": 682,
+        "text": "Okay, awesome. So it's five to 10 people, broadly sounds like. Oh yeah, you want to make it really quick and easy. So it's like, here's 10 things, which of these two do you think I should focus on? So it's a quick ask as something you recommend, and then just thank them for it after you finish. Is that broadly the approach?"
+      },
+      {
+        "speaker": "Ada Chen Rekhi",
+        "timestamp": "00:11:39",
+        "timestampSeconds": 699,
+        "text": "Yep, that's the approach. One thing I want to note is that it's actually really useful for personal things as well. So we framed it in this professional context of, I'm trying to change a job. But one example that I have is when we had our daughter who's now three years old, one of the debates that my partner and I were having was how do we actually set up our estate planning in terms of if, God forbids, something happened to both of us. How should she inherit the state? And my partner was basically saying, \"18 years old, she gets everything fully unlocked.\" I was saying, \"Oh, well maybe 25.\" And we're at this impasse. And we actually just started to tell each other, why don't we, in our day-to-day conversations with folks that we trust in our family, people that we think are smart, that have kids ask people what their perspective is on it."
+      },
+      {
+        "speaker": "Ada Chen Rekhi",
+        "timestamp": "00:12:28",
+        "timestampSeconds": 748,
+        "text": "One thing was really telling, no one out of everyone we asked said 18. So that really dragged my partner up. And then the other thing that was really interesting was that we learned a little bit about executive function and the research around it. So executive function, which is your ability to make decisions and plans and be thoughtful peaks at the age of 30, and it's all downhill from there. So bad news for people like me that are older."
+      },
+      {
+        "speaker": "Lenny",
+        "timestamp": "00:12:54",
+        "timestampSeconds": 774,
+        "text": "And then I'm getting [inaudible 00:12:54] or game over."
+      }
+    ],
+    "speaker": "Lenny",
+    "startTimestamp": "00:11:22",
+    "startTimestampSeconds": 682,
+    "text": "Lenny: Okay, awesome. So it's five to 10 people, broadly sounds like. Oh yeah, you want to make it really quick and easy. So it's like, here's 10 things, which of these two do you think I should focus on? So it's a quick ask as something you recommend, and then just thank them for it after you finish. Is that broadly the approach?\n\nAda Chen Rekhi: Yep, that's the approach. One thing I want to note is that it's actually really useful for personal things as well. So we framed it in this professional context of, I'm trying to change a job. But one example that I have is when we had our daughter who's now three years old, one of the debates that my partner and I were having was how do we actually set up our estate planning in terms of if, God forbids, something happened to both of us. How should she inherit the state? And my partner was basically saying, \"18 years old, she gets everything fully unlocked.\" I was saying, \"Oh, well maybe 25.\" And we're at this impasse. And we actually just started to tell each other, why don't we, in our day-to-day conversations with folks that we trust in our family, people that we think are smart, that have kids ask people what their perspective is on it.\n\nAda Chen Rekhi: One thing was really telling, no one out of everyone we asked said 18. So that really dragged my partner up. And then the other thing that was really interesting was that we learned a little bit about executive function and the research around it. So executive function, which is your ability to make decisions and plans and be thoughtful peaks at the age of 30, and it's all downhill from there. So bad news for people like me that are older.\n\nLenny: And then I'm getting [inaudible 00:12:54] or game over.",
+    "guestSlug": "ada-chen-rekhi",
+    "episodeTitle": "Feeling stuck? Here's how to know when it's time to leave your job | Ada Chen Rekhi"
+  },
+  {
+    "turns": [
+      {
+        "speaker": "Ada Chen Rekhi",
+        "timestamp": "00:12:55",
+        "timestampSeconds": 775,
+        "text": "Yeah, exactly."
+      },
+      {
+        "speaker": "Lenny",
+        "timestamp": "00:12:55",
+        "timestampSeconds": 775,
+        "text": "Just like I'm-"
+      },
+      {
+        "speaker": "Ada Chen Rekhi",
+        "timestamp": "00:12:57",
+        "timestampSeconds": 777,
+        "text": "But if you're thinking about 18, you are so far from your peak. So it dragged us both up in terms of what our set point was to make a decision like that. But we wouldn't have figured that out without a curiosity loop because it's too much work to dig through papers or research or whatever else to try to come to a good decision on it."
+      },
+      {
+        "speaker": "Lenny",
+        "timestamp": "00:13:14",
+        "timestampSeconds": 794,
+        "text": "So the core lesson here is just, versus just emailing a bunch of people, asking for advice, which I imagine people often do, just what should I do here? Creating a little bit of the structure and even calling it a curiosity loop, I bet, helps people feel like they want to be a part of this and participate and help."
+      }
+    ],
+    "speaker": "Ada Chen Rekhi",
+    "startTimestamp": "00:12:55",
+    "startTimestampSeconds": 775,
+    "text": "Ada Chen Rekhi: Yeah, exactly.\n\nLenny: Just like I'm-\n\nAda Chen Rekhi: But if you're thinking about 18, you are so far from your peak. So it dragged us both up in terms of what our set point was to make a decision like that. But we wouldn't have figured that out without a curiosity loop because it's too much work to dig through papers or research or whatever else to try to come to a good decision on it.\n\nLenny: So the core lesson here is just, versus just emailing a bunch of people, asking for advice, which I imagine people often do, just what should I do here? Creating a little bit of the structure and even calling it a curiosity loop, I bet, helps people feel like they want to be a part of this and participate and help.",
+    "guestSlug": "ada-chen-rekhi",
+    "episodeTitle": "Feeling stuck? Here's how to know when it's time to leave your job | Ada Chen Rekhi"
+  },
+  {
+    "turns": [
+      {
+        "speaker": "Ada Chen Rekhi",
+        "timestamp": "00:13:31",
+        "timestampSeconds": 811,
+        "text": "Yeah, definitely. One of the things that I always try to do is I try to explain to people in my ask, here's why I picked you. So for example, I picked you because I really trust you to be a sound source of truthful advice and give me some feedback. So I really value that. Do you mind spending a couple of minutes and just giving me some thoughts on this?"
+      },
+      {
+        "speaker": "Lenny",
+        "timestamp": "00:13:53",
+        "timestampSeconds": 833,
+        "text": "And how often are you pinging people? If you're a friend of Ada, are you getting curiosity looped every week, or how often? What's your rate limit?"
+      },
+      {
+        "speaker": "Ada Chen Rekhi",
+        "timestamp": "00:14:02",
+        "timestampSeconds": 842,
+        "text": "I usually reserve it for bigger things. So probably quarterly or anything where I'm having a big debate, and I'm feeling really indecisive."
+      },
+      {
+        "speaker": "Lenny",
+        "timestamp": "00:14:12",
+        "timestampSeconds": 852,
+        "text": "Awesome. It also makes me think about this idea of a personal board of directors, and this feels like an asynchronous approach to that concept where instead of a call every, I don't know, quarter month with small group, it's asynchronous. Here's an ask I have-"
+      }
+    ],
+    "speaker": "Ada Chen Rekhi",
+    "startTimestamp": "00:13:31",
+    "startTimestampSeconds": 811,
+    "text": "Ada Chen Rekhi: Yeah, definitely. One of the things that I always try to do is I try to explain to people in my ask, here's why I picked you. So for example, I picked you because I really trust you to be a sound source of truthful advice and give me some feedback. So I really value that. Do you mind spending a couple of minutes and just giving me some thoughts on this?\n\nLenny: And how often are you pinging people? If you're a friend of Ada, are you getting curiosity looped every week, or how often? What's your rate limit?\n\nAda Chen Rekhi: I usually reserve it for bigger things. So probably quarterly or anything where I'm having a big debate, and I'm feeling really indecisive.\n\nLenny: Awesome. It also makes me think about this idea of a personal board of directors, and this feels like an asynchronous approach to that concept where instead of a call every, I don't know, quarter month with small group, it's asynchronous. Here's an ask I have-",
+    "guestSlug": "ada-chen-rekhi",
+    "episodeTitle": "Feeling stuck? Here's how to know when it's time to leave your job | Ada Chen Rekhi"
+  },
+  {
+    "turns": [
+      {
+        "speaker": "Ada Chen Rekhi",
+        "timestamp": "00:14:24",
+        "timestampSeconds": 864,
+        "text": "Totally. Yep. I think this is really based off of the marketing concept of customer advisory councils. So when I was working in marketing and product at a startup, one of the things we would always have is a group of our top customers on DM, basically. And if we had really interesting product conflicts, we would actually just go ping a couple of them and ask them, \"Hey, we're debating this. Do you mind just giving us your quick thoughts and telling us why?\" And then being able to as a marketer come back to the product conversation and say, here is the literal voice of the customer and four or five different verbatims on what people think about this really enabled me as a marketer to have a seat at the table. And the insight and the helpfulness of that was really something I wanted to bring to my personal life as well."
+      },
+      {
+        "speaker": "Lenny",
+        "timestamp": "00:15:07",
+        "timestampSeconds": 907,
+        "text": "That's really interesting. It's basically user research for your life. User research, you're told don't do what people tell you to do. I guess it's the same thing here, where it's just like, here's advice and then you end up making the decision for your own own life."
+      },
+      {
+        "speaker": "Ada Chen Rekhi",
+        "timestamp": "00:15:19",
+        "timestampSeconds": 919,
+        "text": "Right. Right. Yes. That is the big caveat. Don't do what people tell you to do. Take it as an input and look for the hard feedback. Look for things that you strongly disagree with or are surprises to you. Because to me, I think these loops are more about looking around the corner and seeing if there's anything you missed in terms of the integrity of your decision making process."
+      },
+      {
+        "speaker": "Lenny",
+        "timestamp": "00:15:43",
+        "timestampSeconds": 943,
+        "text": "Sweet. You said that people told you what we should not talk about. They're like, \"Don't cover this.\" What was in that list?"
+      }
+    ],
+    "speaker": "Ada Chen Rekhi",
+    "startTimestamp": "00:14:24",
+    "startTimestampSeconds": 864,
+    "text": "Ada Chen Rekhi: Totally. Yep. I think this is really based off of the marketing concept of customer advisory councils. So when I was working in marketing and product at a startup, one of the things we would always have is a group of our top customers on DM, basically. And if we had really interesting product conflicts, we would actually just go ping a couple of them and ask them, \"Hey, we're debating this. Do you mind just giving us your quick thoughts and telling us why?\" And then being able to as a marketer come back to the product conversation and say, here is the literal voice of the customer and four or five different verbatims on what people think about this really enabled me as a marketer to have a seat at the table. And the insight and the helpfulness of that was really something I wanted to bring to my personal life as well.\n\nLenny: That's really interesting. It's basically user research for your life. User research, you're told don't do what people tell you to do. I guess it's the same thing here, where it's just like, here's advice and then you end up making the decision for your own own life.\n\nAda Chen Rekhi: Right. Right. Yes. That is the big caveat. Don't do what people tell you to do. Take it as an input and look for the hard feedback. Look for things that you strongly disagree with or are surprises to you. Because to me, I think these loops are more about looking around the corner and seeing if there's anything you missed in terms of the integrity of your decision making process.\n\nLenny: Sweet. You said that people told you what we should not talk about. They're like, \"Don't cover this.\" What was in that list?",
+    "guestSlug": "ada-chen-rekhi",
+    "episodeTitle": "Feeling stuck? Here's how to know when it's time to leave your job | Ada Chen Rekhi"
+  },
+  {
+    "turns": [
+      {
+        "speaker": "Ada Chen Rekhi",
+        "timestamp": "00:15:50",
+        "timestampSeconds": 950,
+        "text": "So I think there were two topics on the list. The first one, it was just how do you onboard and hire and bring people onto the team? And the feedback I got there was like, \"There's just so many people who have done this. I'm sure you have some interesting concepts, but I personally wouldn't be that interested in hearing it. And that was really useful to me. And then the other one was actually just about being a woman in Silicon Valley and the experience of that. I actually had someone write, and you probably read this, Lenny, \"No. Stay far away from this. There's no winning on this topic.\""
+      },
+      {
+        "speaker": "Lenny",
+        "timestamp": "00:16:23",
+        "timestampSeconds": 983,
+        "text": "Oh, my God. Okay, let's touch on that topic rather than, it's going to be great."
+      },
+      {
+        "speaker": "Ada Chen Rekhi",
+        "timestamp": "00:16:28",
+        "timestampSeconds": 988,
+        "text": "Yeah. So let's ignore the advice?"
+      },
+      {
+        "speaker": "Lenny",
+        "timestamp": "00:16:29",
+        "timestampSeconds": 989,
+        "text": "Yeah, let's ignore it. Before we get to that, I wanted to first talk about you. You gave me some homework also ahead of this chat. And the homework was around helping me figure out values and personal values for myself. I did the exercise. So first of all, can you just maybe talk about what this exercise was, and what the goal of it is? And then I'll share what I come up with."
+      }
+    ],
+    "speaker": "Ada Chen Rekhi",
+    "startTimestamp": "00:15:50",
+    "startTimestampSeconds": 950,
+    "text": "Ada Chen Rekhi: So I think there were two topics on the list. The first one, it was just how do you onboard and hire and bring people onto the team? And the feedback I got there was like, \"There's just so many people who have done this. I'm sure you have some interesting concepts, but I personally wouldn't be that interested in hearing it. And that was really useful to me. And then the other one was actually just about being a woman in Silicon Valley and the experience of that. I actually had someone write, and you probably read this, Lenny, \"No. Stay far away from this. There's no winning on this topic.\"\n\nLenny: Oh, my God. Okay, let's touch on that topic rather than, it's going to be great.\n\nAda Chen Rekhi: Yeah. So let's ignore the advice?\n\nLenny: Yeah, let's ignore it. Before we get to that, I wanted to first talk about you. You gave me some homework also ahead of this chat. And the homework was around helping me figure out values and personal values for myself. I did the exercise. So first of all, can you just maybe talk about what this exercise was, and what the goal of it is? And then I'll share what I come up with.",
+    "guestSlug": "ada-chen-rekhi",
+    "episodeTitle": "Feeling stuck? Here's how to know when it's time to leave your job | Ada Chen Rekhi"
+  }
+]
