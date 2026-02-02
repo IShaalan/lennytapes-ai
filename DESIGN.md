@@ -739,6 +739,95 @@ If Langfuse is unavailable or a prompt doesn't exist:
 
 ---
 
+## Search Infrastructure
+
+### Problem: IVFFlat Accuracy Issues
+
+The original IVFFlat index had accuracy problems—with small `match_count` values, it missed relevant results entirely. Testing showed that searching for "onboarding" with `match_count=10` returned 0 onboarding segments, but `match_count=500` correctly returned them at the top.
+
+### Solution: HNSW Index + Hybrid Search
+
+#### HNSW Index (Replaced IVFFlat)
+
+HNSW (Hierarchical Navigable Small World) provides better accuracy than IVFFlat with acceptable memory tradeoff.
+
+**Migration:** `scripts/migrate-hnsw-index.sql`
+
+```sql
+-- HNSW index with optimized parameters
+CREATE INDEX segments_embedding_hnsw_idx ON segments
+USING hnsw (embedding vector_cosine_ops)
+WITH (m = 16, ef_construction = 64);
+
+-- Query-time quality setting
+SET hnsw.ef_search = 100;
+```
+
+**Parameters:**
+- `m = 16`: Connections per layer (good balance of speed/accuracy)
+- `ef_construction = 64`: Build-time quality
+- `ef_search = 100`: Query-time quality (higher = better recall)
+
+#### Hybrid Search (Semantic + Keyword)
+
+Combines vector similarity with PostgreSQL full-text search for better recall on keyword queries.
+
+**Migration:** `scripts/migrate-hybrid-search-v2.sql`
+
+**Function:** `hybrid_search(query_text, query_embedding, match_count, semantic_weight, keyword_weight, match_threshold)`
+
+**How it works:**
+1. Get top candidates by semantic similarity (vector search)
+2. Get keyword matches using OR-based tsquery (any word matches)
+3. Combine scores: `(semantic * 0.7) + (keyword * 0.3)`
+4. Return merged results sorted by combined score
+
+**Key feature:** OR-based keyword matching—"onboarding flow" matches segments with either "onboarding" OR "flow", not requiring both.
+
+### Search Configuration
+
+```typescript
+// lib/search.ts
+export const SEARCH_CONFIG = {
+  semanticWeight: 0.7,    // 70% semantic similarity
+  keywordWeight: 0.3,     // 30% keyword matching
+  defaultLimit: 20,
+  defaultThreshold: 0.3,  // Lowered from 0.7 for better recall
+};
+```
+
+### Golden Dataset for Search Evaluation
+
+A golden dataset provides regression testing, algorithm comparison, and metrics tracking.
+
+**Files:**
+- `data/golden-queries.ts` — 54 queries across types/topics/difficulties
+- `scripts/seed-golden-dataset.ts` — Seeds Langfuse dataset
+- `scripts/annotate-search-results.ts` — Runs searches, links to Langfuse
+- `scripts/evaluate-search.ts` — Calculates Precision@K, Recall@K, MRR, NDCG
+
+**Query Distribution:**
+- **By Type:** 27 semantic, 17 keyword, 4 guest-specific, 6 mixed
+- **By Difficulty:** 20 easy, 24 medium, 10 hard
+- **By Topic:** growth, hiring, culture, roadmap, retention, onboarding, pricing, activation, OKR, PMF, positioning, metrics
+
+**Evaluation Workflow:**
+```bash
+npm run seed-golden-dataset    # Create Langfuse dataset
+npm run annotate-search        # Run searches, link results
+npm run evaluate-search        # Calculate metrics
+npm run evaluate-search -- --compare  # Compare hybrid vs semantic
+```
+
+**Baseline Metrics (Hybrid Search):**
+| Metric | Value |
+|--------|-------|
+| Mean Precision@5 | 0.230 |
+| Mean MRR | 0.386 |
+| Mean NDCG@10 | 0.922 |
+
+---
+
 ## Chat Guardrails
 
 All chat responses must be grounded in retrieved transcript content:
@@ -884,18 +973,26 @@ lennytapes/
 │   ├── config.ts                   # ✅ App config (threshold 0.3)
 │   ├── db.ts                       # ✅ Supabase client
 │   ├── llm.ts                      # ✅ LLM gateway with retry
-│   ├── prompts.ts                  # ✅ Langfuse prompt management (NEW)
+│   ├── prompts.ts                  # ✅ Langfuse prompt management
+│   ├── search.ts                   # ✅ Hybrid search utility (NEW)
 │   ├── types.ts                    # ✅ TypeScript types
 │   └── utils.ts                    # ✅ Helper functions
 ├── scripts/
 │   ├── pipeline.ts                 # ✅ Full extraction pipeline
-│   ├── upload-prompts.ts           # ✅ Upload prompts to Langfuse (NEW)
+│   ├── upload-prompts.ts           # ✅ Upload prompts to Langfuse
 │   ├── retry-failed.ts             # ✅ Retry failed segments
 │   ├── verify-db.ts                # ✅ Verify DB connection
 │   ├── embed.ts                    # ✅ Generate embeddings
+│   ├── migrate-hnsw-index.sql      # ✅ HNSW index migration (NEW)
+│   ├── migrate-hybrid-search-v2.sql # ✅ Hybrid search function (NEW)
+│   ├── seed-golden-dataset.ts      # ✅ Seed Langfuse dataset (NEW)
+│   ├── annotate-search-results.ts  # ✅ Run searches for annotation (NEW)
+│   ├── evaluate-search.ts          # ✅ Calculate search metrics (NEW)
+│   ├── test-hybrid-search.ts       # ✅ Compare hybrid vs semantic (NEW)
 │   ├── synthesize.ts               # ⏳ Build guest profiles
 │   └── detect-tensions.ts          # ⏳ Pre-compute contradictions
 ├── data/
+│   ├── golden-queries.ts           # ✅ 54 evaluation queries (NEW)
 │   └── pipeline-log.json           # ✅ Extraction progress
 ├── next.config.mjs                 # ✅ Next.js config
 ├── tailwind.config.ts              # ✅ Tailwind with theme tokens
@@ -903,6 +1000,7 @@ lennytapes/
 ├── tsconfig.json                   # ✅ TypeScript config
 ├── package.json                    # ✅ Dependencies
 ├── .env                            # ✅ Environment variables
+├── CLAUDE.md                       # ✅ Claude Code instructions (NEW)
 └── DESIGN.md                       # ✅ This document
 
 Legend: ✅ Done | 🔄 In Progress | ⏳ Pending
@@ -912,8 +1010,8 @@ Legend: ✅ Done | 🔄 In Progress | ⏳ Pending
 
 ## Task Tracker
 
-> **Last updated:** 2026-01-31
-> **Current focus:** AI Advisor UX redesign complete
+> **Last updated:** 2026-02-01
+> **Current focus:** Search infrastructure improvements complete
 
 ### Phase 1: Data Foundation
 
@@ -984,6 +1082,19 @@ Legend: ✅ Done | 🔄 In Progress | ⏳ Pending
 | LLM observability | ✅ Done | Langfuse tracing |
 | Mobile responsiveness | ⏳ Pending | Test & fix |
 
+### Phase 7: Search Infrastructure
+
+| Task | Status | Notes |
+|------|--------|-------|
+| HNSW index migration | ✅ Done | Replaced IVFFlat for better accuracy |
+| Hybrid search function | ✅ Done | Semantic (70%) + keyword (30%) |
+| OR-based keyword matching | ✅ Done | Matches ANY word, not all |
+| Golden dataset queries | ✅ Done | 54 queries in `data/golden-queries.ts` |
+| Langfuse dataset seeding | ✅ Done | `npm run seed-golden-dataset` |
+| Search annotation script | ✅ Done | `npm run annotate-search` |
+| Evaluation metrics script | ✅ Done | Precision, Recall, MRR, NDCG |
+| GitHub repo setup | ✅ Done | github.com/IShaalan/lennytapes-ai |
+
 ---
 
 ## Completed Milestones
@@ -1008,6 +1119,11 @@ Legend: ✅ Done | 🔄 In Progress | ⏳ Pending
 | 2026-01-31 | Related/contradicting views with AI synthesis |
 | 2026-01-31 | Before/after segment navigation |
 | 2026-01-31 | Lowered similarity threshold (0.7 → 0.3) for better recall |
+| 2026-02-01 | **HNSW index** - replaced IVFFlat for better search accuracy |
+| 2026-02-01 | **Hybrid search** - semantic + keyword matching (70/30 split) |
+| 2026-02-01 | **Golden dataset** - 54 evaluation queries with metrics tracking |
+| 2026-02-01 | Search evaluation pipeline (seed → annotate → evaluate) |
+| 2026-02-01 | GitHub repo initialized (github.com/IShaalan/lennytapes-ai) |
 
 ---
 
