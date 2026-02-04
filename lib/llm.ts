@@ -569,6 +569,60 @@ ${options.relevantSegments}`;
   });
 }
 
+// ============ RAGAS SCORE HELPERS ============
+
+export interface RagasScoreInput {
+  traceId: string;
+  faithfulness?: number | null;
+  answer_relevancy?: number | null;
+  context_precision?: number | null;
+}
+
+/**
+ * Log RAGAS scores to a Langfuse trace.
+ *
+ * @param input - The trace ID and RAGAS scores to log
+ *
+ * @example
+ * ```ts
+ * await logRagasScores({
+ *   traceId: "trace-123",
+ *   faithfulness: 0.92,
+ *   answer_relevancy: 0.88,
+ *   context_precision: 0.75,
+ * });
+ * ```
+ */
+export function logRagasScores(input: RagasScoreInput): void {
+  if (!langfuse) return;
+
+  const { traceId, faithfulness, answer_relevancy, context_precision } = input;
+
+  if (faithfulness !== null && faithfulness !== undefined) {
+    langfuse.score({
+      traceId,
+      name: "ragas_faithfulness",
+      value: faithfulness,
+    });
+  }
+
+  if (answer_relevancy !== null && answer_relevancy !== undefined) {
+    langfuse.score({
+      traceId,
+      name: "ragas_answer_relevancy",
+      value: answer_relevancy,
+    });
+  }
+
+  if (context_precision !== null && context_precision !== undefined) {
+    langfuse.score({
+      traceId,
+      name: "ragas_context_precision",
+      value: context_precision,
+    });
+  }
+}
+
 // ============ EXPORTS ============
 
 export { langfuse };

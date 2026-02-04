@@ -22,6 +22,7 @@
     "seed-golden-dataset": "tsx scripts/seed-golden-dataset.ts",
     "annotate-search": "tsx scripts/annotate-search-results.ts",
     "evaluate-search": "tsx scripts/evaluate-search.ts",
+    "evaluate-ragas": "tsx scripts/evaluate-ragas.ts",
     "test-hybrid-search": "tsx scripts/test-hybrid-search.ts"
   },
   "dependencies": {

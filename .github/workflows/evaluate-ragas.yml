@@ -1,0 +1,85 @@
+name: RAGAS Evaluation
+
+on:
+  pull_request:
+    paths:
+      - 'lib/prompts.ts'
+      - 'lib/search.ts'
+      - 'lib/llm.ts'
+      - 'lib/evaluation/**'
+      - 'data/golden-queries.ts'
+      - 'scripts/evaluate-ragas.ts'
+      - 'scripts/python/**'
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Number of queries to evaluate (leave empty for all)'
+        required: false
+        type: number
+
+concurrency:
+  group: ragas-eval-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  evaluate:
+    name: Run RAGAS Evaluation
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: 'scripts/python/requirements.txt'
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Install Python dependencies
+        run: pip install -r scripts/python/requirements.txt
+
+      - name: Run RAGAS Evaluation
+        env:
+          # Azure OpenAI (for RAGAS evaluation)
+          AZURE_OPENAI_API_KEY: ${{ secrets.AZURE_OPENAI_API_KEY }}
+          AZURE_OPENAI_ENDPOINT: ${{ secrets.AZURE_OPENAI_ENDPOINT }}
+          AZURE_OPENAI_DEPLOYMENT: ${{ secrets.AZURE_OPENAI_DEPLOYMENT }}
+          AZURE_OPENAI_API_VERSION: ${{ secrets.AZURE_OPENAI_API_VERSION || '2024-02-15-preview' }}
+          # LLM Providers (for search/generation)
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          # Langfuse
+          LANGFUSE_SECRET_KEY: ${{ secrets.LANGFUSE_SECRET_KEY }}
+          LANGFUSE_PUBLIC_KEY: ${{ secrets.LANGFUSE_PUBLIC_KEY }}
+          LANGFUSE_BASE_URL: ${{ secrets.LANGFUSE_BASE_URL }}
+          # Supabase
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          if [ -n "${{ inputs.limit }}" ]; then
+            npx tsx scripts/evaluate-ragas.ts --limit=${{ inputs.limit }}
+          else
+            npx tsx scripts/evaluate-ragas.ts
+          fi
+
+      - name: Upload evaluation results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ragas-evaluation-results
+          path: |
+            *.log
+          retention-days: 7
+          if-no-files-found: ignore
